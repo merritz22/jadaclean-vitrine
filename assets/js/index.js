@@ -1,0 +1,4 @@
+window.onloadeddata = (e) =>{
+    home()
+}
+
