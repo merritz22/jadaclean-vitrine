@@ -5,6 +5,7 @@ const lang = {
         'home':{
             'title':`Nous sommes <span>JADACLEAN</span>`,
             'subtitle':`Specialistes <span class="typing-text fs-2"></span>`,
+            'params': ["Nettoyage professionnel", "Nettoyage de bureau", "Nettoyage evenementiel", "Nettoyage hebdomadaire"],
             'body':{
                 'title':[
                     `De l'art du nettoyage professionnel`, 
@@ -84,6 +85,7 @@ const lang = {
         'home':{
             'title':`Noi suntem <span>JADACLEAN</span>`,
             'subtitle':`Specialiști <span class="typing-text fs-2"></span>`,
+            'params': ["Curatenie profesionala", "curatenie birouri", "Curatenie la eveniment", "Curatenie saptamanala"],
             'body':{
                 'title':[
                     `Arta curățeniei profesionale`,
@@ -163,6 +165,7 @@ const lang = {
         'home':{
             'title':`We are <span>JADACLEAN</span>`,
             'subtitle':`Specialises in <span class="typing-text fs-2"></span>`,
+            'params': ["Professional cleaning", "office cleaning", "Event cleaning", "Weekly cleaning"],
             'body':{
                 'title':[
                     `The art of professional cleaning`, 

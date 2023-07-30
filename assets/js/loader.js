@@ -1,6 +1,6 @@
 let ls = 1
 window.onload = (e) =>{
-    document.querySelector('.navbar li #lang').src = './fr.svg'
+    document.querySelector('.navbar li #lang').src = localStorage.getItem('lang') == null ? './fr.svg' : localStorage.getItem('lang')
     document.querySelector('.navbar li #lang').onclick = (e) => {
         e.target.src= langValue[ls];
         localStorage.setItem('lang', langValue[ls])
@@ -68,9 +68,9 @@ function home() {
     const text = document.querySelector('.content p')
     const cardsTitles = document.querySelectorAll('h1.card-title.text-uppercase')
     const cardsBody = document.querySelectorAll('p.card-text')
-    let i = 0
+    let i = 0, head = lang.fr
     if(localStorage.getItem('lang') && (!localStorage.getItem('lang').includes('fr'))){
-        let head = lang.en
+        head = lang.en
         if (localStorage.getItem('lang').includes('ro'))
             head = lang.ro
         title.innerHTML = head.home.title
@@ -97,6 +97,13 @@ function home() {
             i++
         });
     }
+    var typed = new Typed(".typing-text", {
+        strings: head.home.params,
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 500,
+    });
 }
 
 function pricing() {
